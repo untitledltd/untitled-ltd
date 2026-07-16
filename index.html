@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Untitled Ltd — SEO blog content for HVAC companies. 4 posts, keyword-researched and ready to publish. Flat fee, no retainer.">
+<title>Untitled Ltd — SEO Content for HVAC Companies</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0E0F0D;
+    --bg-card: #161714;
+    --border: #2A2B28;
+    --text-primary: #E8E8E3;
+    --text-secondary: #888882;
+    --text-muted: #555550;
+    --teal: #5DCAA5;
+    --teal-dark: #0F2E22;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0 24px;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .wordmark {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+
+  .wordmark span { color: var(--text-muted); font-weight: 400; }
+
+  .nav-link {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .nav-link:hover { color: var(--text-primary); }
+
+  /* HERO */
+  .hero {
+    padding: 72px 0 56px;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 22px;
+  }
+
+  h1 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: -0.022em;
+    color: var(--text-primary);
+    margin-bottom: 22px;
+    max-width: 540px;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    color: var(--text-secondary);
+    max-width: 480px;
+    line-height: 1.68;
+    margin-bottom: 40px;
+  }
+
+  .cta-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--teal);
+    color: #0E0F0D;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 13px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: opacity 0.15s;
+  }
+
+  .btn:hover { opacity: 0.88; }
+
+  .price-note { font-size: 13px; color: var(--text-muted); }
+  .price-note strong { color: var(--text-primary); font-weight: 500; }
+
+  /* SECTIONS */
+  section { padding: 56px 0; border-bottom: 0.5px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+    letter-spacing: -0.012em;
+  }
+
+  .section-intro {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 36px;
+    max-width: 500px;
+    line-height: 1.68;
+  }
+
+  /* DELIVERABLES */
+  .deliverables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+
+  .d-item {
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: 6px;
+    padding: 20px 22px;
+  }
+
+  .d-num {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--teal);
+    margin-bottom: 8px;
+  }
+
+  .d-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+  }
+
+  .d-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.55; }
+
+  /* PRICE BLOCK */
+  .price-block {
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: 6px;
+    padding: 26px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .price-tag {
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--text-primary);
+    letter-spacing: -0.022em;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .price-detail { font-size: 13px; color: var(--text-muted); }
+
+  /* WHY */
+  .why-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 22px 0;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .why-item:first-child { padding-top: 0; }
+  .why-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .why-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    background: var(--teal-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .why-icon i { font-size: 16px; color: var(--teal); }
+
+  .why-title { font-size: 14px; font-weight: 500; color: var(--text-primary); margin-bottom: 5px; }
+  .why-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.58; }
+
+  /* CRED */
+  .cred-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 0.5px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--bg-card);
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+
+  .stat {
+    padding: 26px 22px;
+    border-right: 0.5px solid var(--border);
+  }
+
+  .stat:last-child { border-right: none; }
+
+  .stat-num {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-primary);
+    letter-spacing: -0.022em;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .stat-label { font-size: 12px; color: var(--text-secondary); line-height: 1.45; }
+
+  .bio {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    max-width: 520px;
+  }
+
+  /* BOTTOM CTA */
+  .bottom-cta {
+    text-align: center;
+    padding: 72px 0;
+    border-bottom: none;
+  }
+
+  .bottom-cta h2 { font-size: 28px; margin-bottom: 12px; }
+  .bottom-sub { font-size: 15px; color: var(--text-secondary); margin-bottom: 32px; }
+
+  /* FOOTER */
+  footer {
+    border-top: 0.5px solid var(--border);
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-word {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .footer-copy { font-size: 12px; color: var(--text-muted); }
+
+  /* RESPONSIVE */
+  @media (max-width: 520px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 20px; }
+    .deliverables { grid-template-columns: 1fr; }
+    .cred-stats { grid-template-columns: 1fr; }
+    .stat { border-right: none; border-bottom: 0.5px solid var(--border); }
+    .stat:last-child { border-bottom: none; }
+    .price-block { flex-direction: column; align-items: flex-start; }
+    .bottom-cta { padding: 52px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <nav>
+    <a href="/" class="wordmark">Untitled <span>Ltd</span></a>
+    <a href="mailto:devashercopy@gmail.com" class="nav-link">Get in touch</a>
+  </nav>
+
+  <section class="hero">
+    <div class="eyebrow">SEO Blog Content for HVAC Companies</div>
+    <h1>Your customers search before they call. Are you showing up?</h1>
+    <p class="hero-sub">Most local HVAC companies are invisible online — not because they do bad work, but because they're not producing the content that brings searchers to them. That's a fixable problem.</p>
+    <div class="cta-row">
+      <a href="https://www.paypal.com/ncp/payment/KADQ5ERLQUGXW" class="btn">Get started — $1,000</a>
+      <span class="price-note">Flat fee. <strong>4 posts.</strong> No retainer.</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">What you get</div>
+    <h2>Four blog posts, ready to publish</h2>
+    <p class="section-intro">Every post is researched, written, and optimized for the searches your customers are actually making in your area. Delivered in two weeks as Google Docs, ready to upload.</p>
+
+    <div class="deliverables">
+      <div class="d-item">
+        <div class="d-num">01</div>
+        <div class="d-title">Keyword research</div>
+        <div class="d-desc">Topics chosen based on what your local customers are searching for — not guesses.</div>
+      </div>
+      <div class="d-item">
+        <div class="d-num">02</div>
+        <div class="d-title">4 SEO-optimized posts</div>
+        <div class="d-desc">800–1,200 words each. Written for people, structured for Google.</div>
+      </div>
+      <div class="d-item">
+        <div class="d-num">03</div>
+        <div class="d-title">Meta descriptions</div>
+        <div class="d-desc">Click-worthy summaries for every post, included at no extra charge.</div>
+      </div>
+      <div class="d-item">
+        <div class="d-num">04</div>
+        <div class="d-title">Delivered in 14 days</div>
+        <div class="d-desc">Google Docs format. Upload directly to your website. Done.</div>
+      </div>
+    </div>
+
+    <div class="price-block">
+      <div>
+        <div class="price-tag">$1,000</div>
+        <div class="price-detail">One-time. No contracts. No surprises.</div>
+      </div>
+      <a href="https://www.paypal.com/ncp/payment/KADQ5ERLQUGXW" class="btn">Yes, I want this</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Why it matters</div>
+    <h2>Search has changed. Most HVAC companies haven't.</h2>
+
+    <div style="margin-top: 28px;">
+      <div class="why-item">
+        <div class="why-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+        <div>
+          <div class="why-title">New residents search before they call anyone</div>
+          <div class="why-desc">Homeowners who are new to an area don't have a trusted HVAC company yet. They go to Google first. If your business isn't showing up with helpful content, you're not in the running.</div>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon"><i class="ti ti-brand-openai" aria-hidden="true"></i></div>
+        <div>
+          <div class="why-title">AI search is changing who gets found</div>
+          <div class="why-desc">Google's AI Overviews and tools like ChatGPT now answer questions like "best HVAC company near me" directly in results. The companies getting cited are the ones with helpful, local content — not just reviews.</div>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon"><i class="ti ti-clock" aria-hidden="true"></i></div>
+        <div>
+          <div class="why-title">You don't have time to write it yourself</div>
+          <div class="why-desc">Running a service business means you're on the road, on the phone, or on a job site. Content falls through the cracks. That's exactly what this package is for.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">About Untitled</div>
+    <h2>11 years writing content that ranks</h2>
+
+    <div class="cred-stats">
+      <div class="stat">
+        <div class="stat-num">11</div>
+        <div class="stat-label">Years in SEO &amp; content strategy</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">400+</div>
+        <div class="stat-label">Clients across 50+ countries</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1</div>
+        <div class="stat-label">Person. You work directly with Dev.</div>
+      </div>
+    </div>
+
+    <p class="bio">Untitled is a boutique SEO content studio run by Dev Asher, a content strategist with over a decade of experience helping local service businesses show up where their customers are searching. No junior writers, no handoffs — senior-level work on every project.</p>
+  </section>
+
+  <section class="bottom-cta">
+    <h2>Ready to get found?</h2>
+    <p class="bottom-sub">Send an email to get started. You'll hear back within 24 hours.</p>
+    <a href="mailto:devashercopy@gmail.com?subject=HVAC%20Blog%20Package" class="btn">devashercopy@gmail.com</a>
+  </section>
+
+  <footer>
+    <div class="footer-word">Untitled Ltd</div>
+    <div class="footer-copy">untitled.ltd &nbsp;&middot;&nbsp; Built for search. Written for humans.</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
